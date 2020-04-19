@@ -1,4 +1,4 @@
-####Розробити SPA web-додаток "Книга Рецептів" (назва довільна).
+###Розробити SPA web-додаток "Книга Рецептів" (назва довільна).
 
 _Recipe in DB:_{id, name, category, shortDesc, longDesc, createDate}.
 
