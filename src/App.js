@@ -14,7 +14,7 @@ function App() {
                 <Header/>
                 <Switch>
                     <Route path="/recipes" exact component={Recipes}/>
-                    <Route path="/recipes/:recipeId" component={Recipe}/>
+                    <Route path="/recipes/:recipeId" exact component={Recipe}/>
                     <Route path="/add" component={Add}/>
                     <Route path="/recipes/:recipeId/edit" component={Edit}/>
                     <Redirect from="/" to="recipes"/>

@@ -1,5 +1,4 @@
 import React from 'react';
-import Search from './Search'
 import {Link} from 'react-router-dom';
 
 function Header() {
@@ -15,8 +14,6 @@ function Header() {
     return (
         <nav style={headerStyle}>
             <Link to='/recipes'>Recipes</Link>
-            <Search/>
-            <Link to='/add'>Add new recipe</Link>
         </nav>
     );
 }
