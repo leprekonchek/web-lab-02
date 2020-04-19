@@ -18,16 +18,20 @@ function Recipes() {
 
     const fetchRecipes = async (query) => {
         const search = nameParam(query);
-        const data = await fetch(`http://localhost:3001/recipes?${search}`);
+        const sort = sortParam(localStorage.getItem('sort'));
+        const data = await fetch(`http://localhost:3001/recipes?${sort}`);
         const recipes = await data.json();
         setRecipes(recipes);
     };
 
     const nameParam = (param) => {
-        if (!param) {
-            return '';
-        }
+        if (!param) return '';
         return `name_like=${param}`;
+    };
+
+    const sortParam = (param) => {
+        if (!param) return '';
+        return `_sort=createDate&_order=${param}`;
     };
 
     const deleteRecipe = (id) => async () => {

@@ -5,9 +5,10 @@ import Recipes from "./Recipes";
 const Add = () => {
     const history = useHistory();
     let today = new Date();
-    today = String(today.getMonth() + 1).padStart(2, '0')
-        + '.' + String(today.getDate()).padStart(2, '0')
-        + '.' + today.getFullYear();
+    today = String(
+        String(today.getDate()).padStart(2, '0')
+        + '.' + String(today.getMonth() + 1).padStart(2, '0')
+        + '.' + today.getFullYear());
 
     const addRecipe = async ({name, shortDesc, longDesc, category}) => {
         return await fetch('http://localhost:3001/recipes', {
