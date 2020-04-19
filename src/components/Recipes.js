@@ -30,9 +30,14 @@ function Recipes() {
         return `name_like=${param}`;
     };
 
+    const deleteRecipe = (id) => async () => {
+        await fetch(`http://localhost:3001/recipes/${id}`, {method: 'DELETE'});
+        fetchRecipes();
+    }
+
     useEffect(() => {
         fetchRecipes();
-    }, [search]);
+    }, []);
 
     return (
         <div>
@@ -46,14 +51,30 @@ function Recipes() {
             <div className="recipes">{recipes.map(recipe => (
                 <div key={recipe.id} className="recipe">
                     <div style={{display: "flex", alignItems: "center"}}>
-                        <Link to={`recipes/${recipe.id.toString()}`}><h3>{recipe.name}</h3></Link>
-                        <Link to={`recipes/${recipe.id.toString()}/edit`} style={{marginLeft: "auto"}}><img src={require('../edit-icon.png')} alt="edit" style={{width: '32px'}}/></Link>
+                        <div>
+                            <Link to={`recipes/${recipe.id.toString()}`}>
+                                <h3 style={{margin: "5px"}}>{recipe.name}</h3>
+                            </Link>
+                            <div style={{
+                                marginBottom: "10px",
+                                marginLeft: "5px",
+                                textAlign: "left"
+                            }}>{recipe.category}</div>
+                        </div>
+                        <Link to={`recipes/${recipe.id.toString()}/edit`}
+                              style={{marginRight: "0", marginLeft: "auto"}}>
+                            <button><img src={require('../images/edit-icon.png')} alt="edit" style={{width: '32px'}}/>
+                            </button>
+                        </Link>
+                        <button onClick={deleteRecipe(recipe.id)}><img src={require('../images/close-icon.png')}
+                                                                       alt="close"
+                                                                       style={{width: '32px', marginRight: "0"}}/>
+                        </button>
                     </div>
-                    <a>{recipe.category}</a>
                     <img src={recipe.image} style={{width: "100%"}}/>
                     <p><b>Ingredients:</b> <br/> {recipe.shortDesc}</p>
                     <p className="text-over"><b>How to prepare:</b> <br/> {recipe.longDesc}</p>
-                    <p><b>Created:</b>{recipe.createDate}</p>
+                    <p><b>Created: </b>{recipe.createDate}</p>
                 </div>
             ))}</div>
         </div>

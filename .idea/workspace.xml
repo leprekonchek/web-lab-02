@@ -11,16 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05e10c97-0e24-43b6-a967-a4a8a9ef354f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/recipe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edit-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/close-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/methods.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Add.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Edit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Recipe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Recipes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Recipes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/recipe.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recipe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edit-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/edit-icon.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -65,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\univer\дз по проге\3year\трим2\web\hm3_final\src\images" />
       <recent name="D:\univer\дз по проге\3year\трим2\web\hm3_final\src" />
     </key>
   </component>
@@ -101,7 +103,7 @@
       <workItem from="1586892638339" duration="600000" />
       <workItem from="1586977067509" duration="600000" />
       <workItem from="1587073849428" duration="1842000" />
-      <workItem from="1587292933710" duration="8575000" />
+      <workItem from="1587292933710" duration="19355000" />
     </task>
     <task id="LOCAL-00001" summary="basic recipes displaying">
       <created>1587295963397</created>
@@ -110,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587295963397</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add &amp; edit done">
+      <created>1587305640876</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587305640876</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -139,17 +148,22 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="basic recipes displaying" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic recipes displaying" />
+    <MESSAGE value="add &amp; edit done" />
+    <option name="LAST_COMMIT_MESSAGE" value="add &amp; edit done" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="267" y="19" key="#Inspections" timestamp="1587311841613">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="267" y="19" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1587311841613" />
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587297904951">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587297904951" />
-    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1587295962572">
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1587305640278">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587295962572" />
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587305640278" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1587152628960">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

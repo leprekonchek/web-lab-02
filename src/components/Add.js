@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link, useHistory} from 'react-router-dom';
+import Recipes from "./Recipes";
 
 const Add = () => {
     const history = useHistory();
@@ -26,7 +27,7 @@ const Add = () => {
     };
 
     return (
-        <div style={{margin: "10%"}}>
+        <div style={{margin: "7%"}}>
             <form onSubmit={async (e) => {
                 e.persist();
                 e.preventDefault();
@@ -44,7 +45,10 @@ const Add = () => {
                     <input type="text" name="short" placeholder="Ingredients"/>
                     <textarea name="long" placeholder="Steps how to prepare"/>
                     <input type="text" name="category" placeholder="Category"/>
-                    <input type="submit" value="Додати рецепт"/>
+                    <div style={{display: "flex"}}>
+                        <Link to={'/'}><input type="submit" value="Скасувати"/></Link>
+                        <input type="submit" value="Додати рецепт"/>
+                    </div>
                 </div>
             </form>
         </div>
